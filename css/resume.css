@@ -93,6 +93,17 @@ p.lead {
     outline-color: #d48a6e;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container > div {
+    width: 95%;
+    margin: 10px;
+    text-align: justify;
+}
+
 @media (min-width: 992px) {
     #sideNav {
         text-align: center;
@@ -191,4 +202,17 @@ a:hover,
 a:focus,
 a:active {
     color: #824027;
+}
+
+@media(min-width: 500px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-container > div {
+        width: 50%;
+        margin: 10px;
+        text-align: justify;
+    }
 }
